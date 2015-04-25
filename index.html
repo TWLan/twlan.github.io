@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="twlanWWW">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-rc.0/angular.min.js"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <title>Loading...</title>
+    </head>
+    <body ng-controller="MainController">
+        <div class="container">
+            <div class="langselector pull-right">
+                <select class="form-control" ng-model="langService.currentLang" ng-change="changeLang()" id="langselector">
+                    <option ng-repeat="(key, name) in langService.languages" value="{{key}}">{{name}}</option>
+                </select>
+            </div>
+            <a href="."><img src="res/logo.png" class="img-responsive center-block"></img></a>
+            <span ng-if="langService.currentLang">
+                
+                <h2 class="separator">
+                    {{entry("download")}} {{version}}
+                </h2>
+                
+                <div class="licenseContainer">
+                    <small ng-bind-html="entry('license')"></small>
+                </div>
+                <div class="ossection">
+                    <span class="col-sm-4 col-xs-12" ng-repeat="(os, props) in links">
+                        <div class="ositem thumbnail box">
+                            <img ng-src="res/os_{{::os}}.png">
+                            <h2 class="oslabel">
+                                <div class="versionTarget" ng-repeat="row in props">
+                                    <span ng-if="row.text" style="font-size: 75%; font-weight: bold">{{row.text}}</span>
+                                    <a class="label label-success" style="display: inline-block;" ng-repeat="file in row.files" ng-href="{{file.link}}">{{file.name}}</a>
+                                </div>
+                            </h2>
+                        </div>
+                    </span>
+                </div>
+
+                <div style="text-align: center;">
+                    <a href="https://github.com/TWLan/twlan.github.io/releases" class="archiveLink">
+                        release archive
+                    </a>
+                </div>
+                
+                <table class="col-xs-12 footertable">
+                    <tr>
+                        <td class="tablecol box-top">
+                            <h2 class="separator">
+                                <a href="http://github.com/TWLan">Github</a>
+                            </h2>
+                        </td>
+                        <td class="tablecol box-top">
+                            <h2 class="separator">
+                                <a href="http://twlan.org">{{entry("forum")}}</a>
+                            </h2>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tablecol box-bottom">
+                            <ul>
+                                <li>
+                                    <h3>
+                                        <a href="https://github.com/TWLan/Issues/issues">
+                                            {{entry("github::issues")}}
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="https://twlan-lang.siguza.net/#/login">
+                                            {{entry("github::translate")}}
+                                        </a>
+                                    </h3>
+                                </li>
+                                <li>
+                                    <h3>
+                                        <a href="https://github.com/TWLan">
+                                            {{entry("github::oss")}}
+                                        </a>
+                                    </h3>
+                                </li>
+                            </ul>
+                        </td>
+                        <td class="tablecol box-bottom">
+                            <ul>
+                                <li><h3>{{entry("community")}}</h3></li>
+                                <li><h3>{{entry("news")}}</h3></li>
+                                <li><h3>{{entry("furtherSupport")}}</h3></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+                
+                <div class="clearfix"></div>
+                
+                
+                <h2 class="separator">
+                    {{entry("install")}}
+                </h2>
+                
+                <div class="osdl box">
+                    <ul>
+                        <li ng-bind-html="entry('steps::extract')"></li>
+                        <li ng-bind-html="entry('steps::launcher')"></li>
+                        <li ng-bind-html="entry('steps::firstuser')"></li>
+                        <li>{{entry("steps::play")}}</li>
+                        <li ng-bind-html="entry('steps::post')"></li>
+                    </ul>
+                </div>
+
+                <div class="credits">
+                    <h2 class="separator">
+                        {{entry("credits")}}
+                    </h2>
+                    <table class="creditbox box">
+                        <tr>
+                            <td>Steffen</td>
+                            <td class="text-left">
+                                {{entry("roles::development")}}/{{entry("roles::translation")}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Molt</td>
+                            <td class="text-left">
+                                {{entry("roles::development")}}/{{entry("roles::translation")}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Phisa</td>
+                            <td class="text-left">
+                                {{entry("roles::information")}}/{{entry("roles::testing")}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jonsen</td>
+                            <td class="text-left">
+                                {{entry("roles::information")}}/{{entry("roles::testing")}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="http://postopus.de">Postopus</a></td>
+                            <td class="text-left">
+                                {{entry("roles::postopus")}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://innogames.com">InnoGames</a>
+                            </td>
+                            <td class="text-left">{{entry("roles::inno")}}</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="https://github.com/phalcon/zephir">Zephir</a> 
+                                <a href="https://php.net">PHP</a>
+                                <a href="http://mysql.com">MySQL</a>
+                            </td>
+                            <td class="text-left">
+                                {{entry("roles.poweredon")}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>{{entry("allFormer")}}</td>
+                            <td class="text-left"></td>
+                        </tr>
+                        <tr>
+                            <td>{{entry("allOthers")}}</td>
+                            <td class="text-left">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </span>
+            <span ng-if="!langService.currentLang">
+                <h2 class="separator">
+                    Loading localization...
+                </h2>
+            </span>
+        </div>
+    </body>
+</html>

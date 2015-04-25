@@ -1,0 +1,175 @@
+body {
+    background-color: #afa393;
+    background-image: url("res/bg.jpg");
+}
+a, a:link {
+    color: #AA5522;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    color: #CC7722;
+}
+.tablecol {
+    width: 50%
+}
+
+.tablecol ul {
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0px; //-webkit-padding-start: 40px;
+}
+.separator{
+    color: #661613;
+    text-align:center;
+    font-weight:bold;
+    font-size:3em;
+    margin:50px 0 .3em;
+}
+
+.separator:before,
+.separator:after{
+    width:20%;
+    height:12px;
+    background: #661613;
+    content:"";
+    margin-top:22px;
+    width:20%;
+    display:block;
+}
+.separator2:before,
+.separator2:after{
+    background-image: url("res/os_linux.png");
+    min-height: 27px;
+    background-position: repeat-x;
+    content:"";
+    margin-top: 11px;
+    width: 25%;
+    display: block;
+}
+
+.separator:before{
+    float:left;
+}
+
+.separator:after{
+    float:right;
+}
+.ossection {
+    width: 100%;
+}
+
+.container {
+    background-image: url("res/back_main.gif");
+    background-position: center center;
+}
+.box, .box-top, .box-bottom {
+    
+    background-color: rgba(150, 100, 50, 0.2);
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.box-top, .box-bottom {
+    border-right: 1px solid #e5d0a8;
+    border-left: 1px solid #e5d0a8;
+}
+.box-top {
+    border-top: 1px solid #e5d0a8;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+}
+.box-bottom {
+    border-bottom: 1px solid #e5d0a8;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+    padding: 25px;
+}
+.box {
+    border: 1px solid #e5d0a8;
+    border-radius: 11px;
+}
+.ossection span {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.versionTarget {
+    padding-top: 5px;
+}
+.versionTarget a {
+    color: white;
+    margin-left: 4px;
+}
+
+.archiveLink {
+    color: #aaa;
+    font-weight: normal !important;
+    text-decoration: underline !important;
+}
+
+.archiveLink:hover {
+    color: #aaa;
+    text-decoration: none !important;
+}
+
+.licenseContainer {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*.ositem:hover {
+    background: linear-gradient(#772724, #550602) !important;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+}*/
+.oslabel {
+    text-align: center;
+    display: block;
+}
+.osdl {
+    font-size: 25px;
+    margin: 0px 50px;
+    padding: 25px;
+}
+@media (max-width: 768px) {
+    .osdl {
+        margin: 0px 7px;
+    }
+}
+.creditbox {
+    table-layout: auto;
+    margin: auto;
+    border-collapse: separate; 
+    padding: 25px;
+    border-spacing: 10px 0px;
+}
+@media (max-width: 768px) {
+    .creditbox {
+        calc(100% - 14px);
+    }
+}
+
+.footertable {
+    table-layout: auto;
+    margin: auto;
+    border-collapse: separate; 
+    padding: 25px;
+    border-spacing: 10px 0px;
+}
+
+@media (max-width: 768px) {
+    .footertable {
+        padding: 0px 5px;
+        border-spacing: 18px 0px !important; margin-left: -16px; width: calc(100% + 32px);
+    }
+}
+
+.credits {
+    margin-bottom: calc(5%);
+    text-align:center;
+    font-weight: bold;
+}
+.langselector {
+    margin-right: -15px;
+}
