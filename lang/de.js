@@ -35,5 +35,5 @@
         "play": "Viel Spaß beim Spielen",
         "post": "Melde Fehler mit <b>Screenshots und ausführlichen Schritten zum Reproduzieren</b><br>(bevorzugterweise <a href=\"https://github.com/TWLan/Issues/issues\">hier</a>)"
     },
-    "license": "Durch das Benutzen dieser Software erklären Sie sich mit den Bedingungen der <a href=\"https://github.com/TWLan/twlan.github.io/wiki/License\">TWLan Lizenz</a> einverstanden, sowie mit den Lizenzen aller mitgelieferter Software.<br>Alle Lizenzen können dem \"license\" Ordner innerhalb des Download-Archivs entnommen werden."
+    "license": "Durch das Benutzen dieser Software erklären Sie sich mit den Bedingungen der <a href=\"https://github.com/TWLan/Wiki/wiki/License\">TWLan Lizenz</a> einverstanden, sowie mit den Lizenzen aller mitgelieferter Software.<br>Alle Lizenzen können dem \"license\" Ordner innerhalb des Download-Archivs entnommen werden."
 }

@@ -35,5 +35,5 @@
         "play": "Play the game and have fun",
         "post": "Report errors with <b>screenshots and detailed steps to reproduce</b><br>(preferably <a href=\"https://github.com/TWLan/Issues/issues\">here</a>)"
     },
-    "license": "By using this software, you agree to the terms of the <a href=\"https://github.com/TWLan/twlan.github.io/wiki/License\">TWLan License</a> and to the licenses of all the software it uses.<br>All individual licenses can be found in the \"license\" folder inside the download archives."
+    "license": "By using this software, you agree to the terms of the <a href=\"https://github.com/TWLan/Wiki/wiki/License\">TWLan License</a> and to the licenses of all the software it uses.<br>All individual licenses can be found in the \"license\" folder inside the download archives."
 }
