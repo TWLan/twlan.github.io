@@ -131,6 +131,7 @@ a:hover {
     font-size: 25px;
     margin: 0px 50px;
     padding: 25px;
+    text-align: center;
 }
 @media (max-width: 768px) {
     .osdl {
