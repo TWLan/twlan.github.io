@@ -1,32 +1,32 @@
 var twlanWWW = angular.module('twlanWWW', []);
 
 twlanWWW.controller('MainController', function ($sce, $scope, $window, langService) {
-    $scope.version = '2.A2-r587';
+    $scope.version = '2.A3-r589';
     $scope.links = {};
     $scope.links.win32 = [
         {text: '32bit', files: [
-            {name: '.7z', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A2/TWLan-2.A2-win32.7z'}, 
-            {name: '.zip', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A2/TWLan-2.A2-win32.zip'}
+            {name: '.7z', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A3/TWLan-2.A3-win32.7z'}, 
+            {name: '.zip', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A3/TWLan-2.A3-win32.zip'}
         ]}
     ];
     $scope.links.linux = [
         {text: '32bit', files: [
-            {name: '.tar.xz', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A2/TWLan-2.A2-linux32.tar.xz'}, 
-            {name: '.zip', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A2/TWLan-2.A2-linux32.zip'}
+            {name: '.tar.xz', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A3/TWLan-2.A3-linux32.tar.xz'}, 
+            {name: '.zip', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A3/TWLan-2.A3-linux32.zip'}
         ]},
         {text: '64bit', files: [
-            {name: '.tar.xz', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A2/TWLan-2.A2-linux64.tar.xz'}, 
-            {name: '.zip', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A2/TWLan-2.A2-linux64.zip'}
+            {name: '.tar.xz', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A3/TWLan-2.A3-linux64.tar.xz'}, 
+            {name: '.zip', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A3/TWLan-2.A3-linux64.zip'}
         ]}
     ];
     $scope.links.mac   = [
         {text: '32bit', files: [
-            {name: '.tar.xz', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A2/TWLan-2.A2-mac32.tar.xz'}, 
-            {name: '.zip', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A2/TWLan-2.A2-mac32.zip'}
+            {name: '.tar.xz', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A3/TWLan-2.A3-mac32.tar.xz'}, 
+            {name: '.zip', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A3/TWLan-2.A3-mac32.zip'}
         ]},
         {text: '64bit', files: [
-            {name: '.tar.xz', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A2/TWLan-2.A2-mac64.tar.xz'}, 
-            {name: '.zip', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A2/TWLan-2.A2-mac64.zip'}
+            {name: '.tar.xz', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A3/TWLan-2.A3-mac64.tar.xz'}, 
+            {name: '.zip', link: 'https://github.com/TWLan/twlan.github.io/releases/download/2.A3/TWLan-2.A3-mac64.zip'}
         ]}
     ];
 
